@@ -4,8 +4,8 @@ class Solution {
         int maxPrime = 0;
 
         for (int i = 0; i < n; i++) {
-            int a = nums[i][i];              // primary diagonal
-            int b = nums[i][n - i - 1];      // secondary diagonal
+            int a = nums[i][i];
+            int b = nums[i][n - i - 1];
 
             if (isPrime(a)) {
                 maxPrime = Math.max(maxPrime, a);
